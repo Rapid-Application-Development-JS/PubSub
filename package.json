@@ -1,0 +1,21 @@
+{
+  "name": "PubSub",
+  "version": "1.0.0",
+  "description": "message bus implementation via pubsub pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rapid-Application-Development-JS/PubSub.git"
+  },
+  "keywords": [
+    "pubsub"
+  ],
+  "author": "Yuriy Luchaninov <y.luchaninov@mobidev.biz> (http://mobidev.biz/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rapid-Application-Development-JS/PubSub/issues"
+  }
+}

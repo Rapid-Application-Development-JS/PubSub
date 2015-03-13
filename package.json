@@ -2,7 +2,7 @@
   "name": "PubSub",
   "version": "1.0.0",
   "description": "message bus implementation via pubsub pattern",
-  "main": "index.js",
+  "main": "pubsub.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

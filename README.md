@@ -7,10 +7,10 @@ It allows not only to **deliver messages** to registered users through channels,
 
 Advantages and differences:
 
-* `sticky` messages - a sticky message will be sticked and delieverd in any case: either at once if the listener already exists, or immediately upon its registration.
+* `sticky` messages - a sticky message will be sticked and delivered in any case: either at once if the listener already exists, or immediately upon its registration.
 * observers `priority` - observers' priorities; you may set the notification priorities of your observers.
-* `ordered` messages - if a message is sent as `ordered`, an observer with a higher priority can cancel its further distribution simply by restoring **false**.
-* you may set the context of the callback function execution for your observers.
+* `ordered` messages - if a message is sent as `ordered`, an observer with a higher priority can cancel its further distribution simply by returning **false**.
+* you may set the execution context of the callback function for your observers.
 * flexible mechanism `unsubscribe` - you may unsubscribe by `subscribe token`, you may unsubscribe from the channel and the callback method, from the channel and the context, or simply unsubscribe the context from all channels - depending on your particular need.
 * tree-structured channels of message distribution - if you send a message to the channel **`level0.level1.level2`**, it will be first received by the subscribers of the channel **`level0`**, then **`level0.level1`**, and only then **`level0.level1.level2`**. Although, you may avoid this if you send a `rootless` message or a message to a channel that has no root.
 

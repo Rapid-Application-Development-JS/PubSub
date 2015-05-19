@@ -1,0 +1,50 @@
+{
+  "authors": [
+    "Yuriy Luchaninov <y.luchaninov@mobidev.biz> (http://mobidev.biz/)"
+  ],
+  "contributors": [
+    {
+      "email": "a.trofimenko@mobidev.biz",
+      "name": "Anton Trofimenko"
+    },
+    {
+      "email": "y.luchaninov@mobidev.biz",
+      "name": "Yuriy Luchaninov"
+    }
+  ],
+  "dependencies": {
+  },
+  "description": "Message bus implementation via pubsub pattern",
+  "devDependencies": {
+    "uglifyjs": "*"
+  },
+  "homepage": "https://github.com/Rapid-Application-Development-JS/PubSub",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "publish-subscribe",
+    "publish",
+    "subscribe",
+    "pattern",
+    "messaging-pattern",
+    "messaging"
+  ],
+  "license": "MIT",
+  "main": [
+    "release/pubsub.min.js",
+    "release/pubsub.min.js.map"
+  ],
+  "moduleType": [
+    "globals",
+    "amd",
+    "es6",
+    "node"
+  ],
+  "name": "radjs-publish–subscribe",
+  "version": "1.0.0"
+}

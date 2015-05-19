@@ -1,21 +1,56 @@
 {
-  "name": "PubSub",
-  "version": "1.0.0",
-  "description": "message bus implementation via pubsub pattern",
-  "main": "pubsub.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Rapid-Application-Development-JS/PubSub.git"
-  },
-  "keywords": [
-    "pubsub"
-  ],
   "author": "Yuriy Luchaninov <y.luchaninov@mobidev.biz> (http://mobidev.biz/)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Rapid-Application-Development-JS/PubSub/issues"
-  }
+  },
+  "contributors": [
+    {
+      "email": "a.trofimenko@mobidev.biz",
+      "name": "Anton Trofimenko"
+    },
+    {
+      "email": "y.luchaninov@mobidev.biz",
+      "name": "Yuriy Luchaninov"
+    }
+  ],
+  "dependencies": {
+  },
+  "description": "Message bus implementation via pubsub pattern",
+  "devDependencies": {
+    "uglifyjs": "*"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "source",
+    "man": "man"
+  },
+  "homepage": "https://github.com/Rapid-Application-Development-JS/PubSub",
+  "keywords": [
+    "publish–subscribe",
+    "publish",
+    "subscribe",
+    "pattern",
+    "messaging-pattern",
+    "messaging"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/Rapid-Application-Development-JS/PubSub/blob/master/LICENSE.md"
+  },
+  "main": [
+    "release/pubsub.min.js",
+    "release/pubsub.min.js.map"
+  ],
+  "name": "radjs-publish-subscribe",
+  "private": false,
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rapid-Application-Development-JS/PubSub.git"
+  },
+  "scripts": {
+    "build-js": "uglifyjs 'source/pubsub.js' --compress --mangle --screw-ie8 --comments --lint --source-map 'release/pubsub.min.js.map' --output 'release/pubsub.min.js'",
+    "test": "mocha"
+  },
+  "version": "1.0.0"
 }

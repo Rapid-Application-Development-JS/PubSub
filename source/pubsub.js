@@ -257,6 +257,14 @@
             }
           }
         }
+      },
+      /**
+       * @param {object} context - context for install
+       */
+      installTo: function (context) {
+        context.subscribe = this.subscribe;
+        context.unsubscribe = this.unsubscribe;
+        context.publish = this.publish;
       }
     };
   }
